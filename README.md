@@ -4,23 +4,3 @@ The recognition of accented speech still remains a dominant  problem  in  automa
 
 
 Keywords:  accented  speech  classification;  feature  scaling; audio features collaboration; audio segmentation. 
-
-Within  the  the  scope  of  this  work,  audio  features  are divided  into  a  main  feature,  the  MFCC,  which  yields enough accuracy on its own, and assist features, the remainder  of  the  features,  which  are  paired  with  the  main feature. Forty audio files each of Arabic, English, 
-Mandarin,  Spanish,  and  Korean  were  selected  from  the Speech Accent Archive  in  which  participants  were  asked to  read  a  set  passage.  Each  audio  file was  then  segmented  into  three  second  clips,  with  some shorter  segments  in  order  to  contain  the  remainder  of  the audio.
-
-Setup
-
-1. Audio Segmentation
-
-<img width="361" alt="Screen Shot 2022-12-15 at 8 38 00 PM" src="https://user-images.githubusercontent.com/118930981/208009256-d9760776-607f-418c-bfab-83660f27756f.png">
-
-<img width="461" alt="Screen Shot 2022-12-15 at 8 38 40 PM" src="https://user-images.githubusercontent.com/118930981/208009352-0cc7f2a1-037f-483c-a9fa-992b502e8cdb.png">
-
-2. Feature Scaling
-3. 7-Fold Cross Validation
-4. ANN Model -- The same ANN model was not used. For scaled features, an ANN of three dense and two dropout layers was implemented. For the unscaled features, the same ANN was used without the dropout layers. This was done in order to optimize the results for both categories.
-
-
-Results
-
-<img width="974" alt="Screen Shot 2022-12-15 at 8 40 55 PM" src="https://user-images.githubusercontent.com/118930981/208009643-921cceb4-1629-45f2-a6b0-9a9c77dab7b9.png">
